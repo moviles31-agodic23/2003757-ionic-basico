@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <meta charset="UTF-8">
+    <title>ticket-2003757</title>
+    
+</head>
+<body>      
+      <ion-content class="ion-padding">
+        <ion-grid class="ion-text-center">
+          <ion-row>
+            <ion-col size="12">
+              <h1 id="titulo">====TICKET DE COMPRA====</h1>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      
+        <ion-grid class="ion-text-center">
+          <ion-row>
+            <ion-col>
+              <ion-item>
+                <ion-label class="textoNormal" position="floating">Articulo</ion-label>
+                <ion-input id="articulo" class="input" type="text"></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+      
+          <ion-row>
+            <ion-col>
+              <ion-item>
+                <ion-label class="textoNormal" position="floating">Precio</ion-label>
+                <ion-input id="precio" class="input" type="number"></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      
+        <ion-button expand="full" class="boton" onclick="agregar()" id="boton">Calcular Total</ion-button>
+        <ion-grid class="ion-text-center">
+            <h2 id="ticketFinal">====== TU TICKET ======</h2>
+        
+            <ion-list id="listaTicket" class="ion-justify-content-center ion-align-items-center">
+            </ion-list>
+        
+            <div name="barra" id="barra"></div>
+        
+            <div class="total" id="total">
+            </div>
+        </ion-grid>
+      </ion-content>
+      
+    <script src="index.js"> </script>
+</body>
+</html>
