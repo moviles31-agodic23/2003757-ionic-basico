@@ -1,0 +1,83 @@
+<ion-grid fixed="true">
+<ion-card>
+    <ion-card-header>
+      <ion-card-title class="titulo">Agregar nueva tarjeta al wallet</ion-card-title>
+
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item class="listaPrincipal">
+          <p>Numero de tarjeta</p>
+          <ion-input
+            [clearInput]="true"
+            [value]=""
+            (click)="validarEntrada($event)"
+            maxlength="16"
+            placeholder="Ingresa el numero de tarjeta"
+            required="true"
+            [(ngModel)] = "tarjeta.numeroTarjeta"
+            >
+          </ion-input>
+        </ion-item>
+        
+        <ion-item class="listaPrincipal">
+          <p class="fechaExpiracion">Fecha de Expiracion</p>
+        
+          <ion-accordion-group multiple="true" [value]="valorAccordion" class="accordion">
+            <ion-accordion>
+              <ion-item slot="header">
+                <ion-label>{{mesSeleccionado}}</ion-label>
+              </ion-item>
+              <ion-list slot="content">
+                <ion-label *ngFor="let mes of meses" (click)="seleccionarMes(mes)">{{mes}}</ion-label>
+              </ion-list>
+            </ion-accordion>
+        
+          
+            <ion-accordion>
+              <ion-item slot="header">
+                <ion-label>{{anioSeleccionado}}</ion-label>
+              </ion-item>
+              <ion-list slot="content">
+                <ion-label *ngFor="let anio of anios" (click)="seleccionarAnio(anio)">{{anio}}</ion-label>
+              </ion-list>
+            </ion-accordion>
+          </ion-accordion-group>
+        </ion-item>
+        
+        
+  
+        <ion-item class="listaPrincipal">
+          <p>CVV</p>
+          <ion-input
+            [clearInput]="true"
+            value=""
+            [counter]="true"
+            maxlength="3"
+            type="password"
+            placeholder="Ingresa tu CVV"
+            required="true"
+            [(ngModel)] = "tarjeta.CVV"
+            >
+          </ion-input>
+        </ion-item>
+  
+        <ion-item class="listaPrincipal">
+          <p>Nombre del titular</p>
+          <ion-input
+            [clearInput]="true"
+            value=""
+            placeholder="Ingresa el nombre del titular"
+            required="true"
+            [(ngModel)] = "tarjeta.nombreTitular"
+            >
+          </ion-input>
+        </ion-item>
+  
+      </ion-list>
+    </ion-card-content>
+  
+    <ion-button fill="clear" (click)="agregarTarjeta(); redirigir()">Agregar Tarjeta</ion-button>
+    
+  </ion-card>
+</ion-grid>`

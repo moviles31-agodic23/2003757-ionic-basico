@@ -1,0 +1,57 @@
+ion-title{
+  font-size:x-large;
+  text-align: center;
+  margin-top: 5%;
+}
+
+
+ion-card {
+  border-radius: 6%;
+  padding: 4%;
+}
+
+ion-card-title {
+  font-size: large;
+  text-align: center;
+  color: #BB27A7;
+  font-weight: bold;
+}
+
+img{
+  max-width: 20%;
+  display: block;
+  margin-left: auto;
+  border: none;
+  border-radius: 5px;
+  margin-top: 2%;
+}
+
+.columnaCVVVIG{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+
+.CVV{
+  color: #BB27A7;
+  font-weight: lighter;
+}
+
+.vigencia{
+  color: #BB27A7;
+}
+
+.CVVdiv{
+  display: block;
+  margin-left: auto;
+}
+
+.nombreTitular{
+  margin-top: 4%;
+}
+
+ion-fab-button {
+  --background: #BB27A7;;
+  --background-hover: #cf50be;
+}
