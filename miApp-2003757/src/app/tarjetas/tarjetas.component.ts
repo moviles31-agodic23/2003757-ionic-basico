@@ -53,7 +53,7 @@ export class TarjetasComponent  implements OnInit {
     ; 
   }
 
-
+  
 
   tarjeta = {
     numeroTarjeta: '',

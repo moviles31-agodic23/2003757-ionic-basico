@@ -1,0 +1,32 @@
+<ion-grid fixed>
+  <h1>
+    Login
+  </h1>
+
+  <ion-card>
+    <ion-card-content>
+      <form #loginForm="ngForm" (ngSubmit)="buscarUsuario(loginForm)">
+        <ion-row>
+          <label for="username" class="labelForm">Username: </label>
+            <input type="text" name="username"
+             class="inputForm"
+            [(ngModel)]="usuario.username" required
+            #username="ngModel" (focus)="ocultarMensajeInvalido()">
+            <div [hidden]="username.valid || username.pristine" class="camposRequeridos">Usuario requerido!</div>
+        </ion-row>
+    
+        <ion-row>
+          <label for="password" class="labelForm">Password: </label>
+            <input type="password" name="password"
+            class="inputForm"
+            [(ngModel)]="usuario.password" required
+            #password="ngModel" (focus)="ocultarMensajeInvalido()">
+            <div [hidden]="password.valid || password.pristine" class="camposRequeridos">Contraseña requerida!</div>
+        </ion-row>
+        <div *ngIf="mostrarMensajeInvalido" class="camposRequeridos">Datos incorrectos!</div>
+          <ion-button type="submit" class="btn" fill="clear">Login</ion-button>
+      </form>
+    </ion-card-content>
+  </ion-card>
+</ion-grid>
+

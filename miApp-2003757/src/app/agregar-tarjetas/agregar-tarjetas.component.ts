@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TarjetasComponent } from '../tarjetas/tarjetas.component';
 import { TarjetasService } from '../services/tarjetas.service';
 import { Router } from '@angular/router';
+import { LoginComponent } from '../login/login.component';
 
 
 
@@ -18,6 +19,7 @@ export class AgregarTarjetasComponent  implements OnInit {
   ngOnInit() {}
 
   tarjetas = this.tarjetasService.tarjetas;
+  usuario = this.tarjetasService.usuarios;
 
   irAAgregar(){
 

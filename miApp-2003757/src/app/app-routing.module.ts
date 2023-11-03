@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { TarjetasComponent } from './tarjetas/tarjetas.component';
 import { AgregarTarjetasComponent } from './agregar-tarjetas/agregar-tarjetas.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
@@ -10,7 +11,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'agregar-tarjetas',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path: 'agregar-tarjetas',
     component: AgregarTarjetasComponent
+  },
+  {
+    path: 'login',
+    component:LoginComponent
   },
 ];
 

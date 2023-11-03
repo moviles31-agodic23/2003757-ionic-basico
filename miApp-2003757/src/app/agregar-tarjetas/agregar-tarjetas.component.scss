@@ -1,19 +1,39 @@
-ion-title{
-  font-size:x-large;
-  text-align: center;
-  margin-top: 5%;
+ion-app {
+  background-color: #84abaa;
 }
 
 
+ion-title{
+  font-size: 9vw;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 8vw;
+  color: #231b42;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+h6{
+  font-size: larger;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 8vw;
+  color: #231b42;
+  font-weight: bold;
+  text-align: center;
+
+}
 ion-card {
-  border-radius: 6%;
+  border-radius: 6vw;
   padding: 4%;
+  background-color: #e6e1cd;
 }
 
 ion-card-title {
   font-size: large;
   text-align: center;
-  color: #BB27A7;
+  color: #565164;
   font-weight: bold;
 }
 
@@ -34,12 +54,12 @@ img{
 
 
 .CVV{
-  color: #BB27A7;
+  color: #565164;
   font-weight: lighter;
 }
 
 .vigencia{
-  color: #BB27A7;
+  color: #565164
 }
 
 .CVVdiv{
@@ -52,6 +72,6 @@ img{
 }
 
 ion-fab-button {
-  --background: #BB27A7;;
-  --background-hover: #cf50be;
+  --background: #748b83;;
+  --background-hover: #748b83;
 }

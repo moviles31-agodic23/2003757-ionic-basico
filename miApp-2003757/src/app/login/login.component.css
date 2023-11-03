@@ -1,0 +1,52 @@
+ion-grid{
+    background-color: #84abaa;
+}
+
+h1{
+    color: #231b42;
+    font-weight: bold;
+    text-align: center;
+    font-size: 10vw;
+}
+ion-card{
+    padding: 4%;
+    border-radius: 6vw;
+    background-color: #e6e1cd;
+}
+ion-row{
+    text-align: center;
+    margin-bottom: 5vw;
+    justify-content: space-between;
+}
+.labelForm{
+    margin: auto;
+    font-size: 5vw;
+    font-weight: bold;
+    color: #231b42;
+}
+.inputForm{
+    margin: auto;
+    width: 50%;
+    font-size: 4vw;
+    font-weight: lighter;
+    background-color: #cfcbbb;
+    border: none;
+    border-radius: 1vw;
+}
+
+.btn{
+    background-color: #748b83;
+    color: white;
+    margin: 9% auto auto 20%;
+    height: 50px;
+    width: 60%;
+    font-weight: bold;
+    font-size: 114%;
+    border: black;
+    border-radius: 40px;
+}
+.camposRequeridos{
+    margin: 2vw;
+    color: #BB27A7;
+    font-weight: bold;
+}

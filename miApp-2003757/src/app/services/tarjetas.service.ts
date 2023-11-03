@@ -9,4 +9,9 @@ export class TarjetasService {
   agregarTarjeta(tarjeta: any) {
     this.tarjetas.push(tarjeta);
   }
+  usuarios : any[] = []
+
+  mostrarUsuario(usuario : any){
+    this.usuarios.push(usuario);
+  }
 }

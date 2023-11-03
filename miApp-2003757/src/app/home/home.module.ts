@@ -7,6 +7,7 @@ import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 import { TarjetasComponent } from '../tarjetas/tarjetas.component';
 import { AgregarTarjetasComponent } from '../agregar-tarjetas/agregar-tarjetas.component';
+import { LoginComponent } from '../login/login.component';
 
 
 
@@ -17,6 +18,6 @@ import { AgregarTarjetasComponent } from '../agregar-tarjetas/agregar-tarjetas.c
     IonicModule,
     HomePageRoutingModule,
   ],
-  declarations: [HomePage, TarjetasComponent, AgregarTarjetasComponent]
+  declarations: [HomePage, TarjetasComponent, AgregarTarjetasComponent, LoginComponent]
 })
 export class HomePageModule {}

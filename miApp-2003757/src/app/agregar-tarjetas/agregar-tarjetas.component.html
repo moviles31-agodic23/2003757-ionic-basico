@@ -1,30 +1,31 @@
 <ion-app>
-  <ion-content class="ion-padding">
-    <ion-title>Mi cartera digital</ion-title>
-    <ion-card *ngFor="let tarjeta of tarjetas">
-      <ion-card-title class="numeroTarjeta">{{ tarjeta.numeroTarjeta }}</ion-card-title>
-      <ion-card-content>
-        <div class="columnaCVVVIG"> 
-          <div class="vigenciadiv"> Vigencia
-            <strong class="vigencia">  {{tarjeta.fechaExpiracion}}</strong>
+  <ion-grid>
+      <h6 *ngFor="let usuarios of usuario; index as i">Bienvenido {{usuarios.username}}</h6>
+      <ion-title>Mi cartera digital</ion-title>
+      <ion-card *ngFor="let tarjeta of tarjetas">
+        <ion-card-title class="numeroTarjeta">{{ tarjeta.numeroTarjeta }}</ion-card-title>
+        <ion-card-content>
+          <div class="columnaCVVVIG"> 
+            <div class="vigenciadiv"> Vigencia
+              <strong class="vigencia">  {{tarjeta.fechaExpiracion}}</strong>
+            </div>
+            
+            <div class="CVVdiv"> CVV
+              <strong class="CVV">***</strong>
+            </div>
           </div>
-          
-          <div class="CVVdiv"> CVV
-            <strong class="CVV">***</strong>
+          <div>
+            <div class="nombreTitular"><strong>{{tarjeta.nombreTitular}}</strong></div>
           </div>
-        </div>
-        <div>
-          <div class="nombreTitular"><strong>{{tarjeta.nombreTitular}}</strong></div>
-        </div>
-
-        <img src="https://logos-world.net/wp-content/uploads/2020/04/Visa-Logo-2014-present.jpg" alt="">
-      </ion-card-content>
-    </ion-card>
-    <ion-fab slot="fixed" vertical="bottom" horizontal="end" (click)="irAAgregar()">
-      <ion-fab-button>
-      <ion-icon name="add-outline"></ion-icon>
-      </ion-fab-button>
-    </ion-fab>
-  </ion-content>
+  
+          <img src="https://logos-world.net/wp-content/uploads/2020/04/Visa-Logo-2014-present.jpg" alt="">
+        </ion-card-content>
+      </ion-card>
+  </ion-grid>
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end" (click)="irAAgregar()">
+    <ion-fab-button>
+    <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-app>
 

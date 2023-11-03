@@ -1,10 +1,16 @@
+ion-grid{
+    background-color: #84abaa;
+}
+
+
 .titulo{
     font-size: x-large;
-    text-align: center;     
+    text-align: center;    
+    color: #231b42; 
 }
 
 ion-button{
-    background-color: #BB27A7;
+    background-color: #748b83;
     color: white;
     margin: 9% auto auto 20%;
     height: 50px;
@@ -16,6 +22,7 @@ ion-button{
 
 .listaPrincipal{
     margin-top: 4%;
+    background-color: transparent !important;
 }
 
 
@@ -27,11 +34,11 @@ ion-list{
 ion-card {
     border-radius: 6%;
     padding: 4%;
+    background-color: #e6e1cd;
 }
 
 ion-card-content{
     align-items: center;
-    background-color: transparent;
 }
 
 
@@ -44,10 +51,12 @@ ion-accordion-group{
     width: 100%;
     margin-top: 15%;
     border: none;
+    background-color: transparent !important;
 }
 
 ion-input{
     margin-top: 4%;
+    background-color: transparent !important;
 }
 
 p{
@@ -56,6 +65,7 @@ p{
     left: 0;
     margin-bottom: 2%;
     font-style: italic;
+    background-color: transparent;
   }
 
 @media (max-width: 370px) {
