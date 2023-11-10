@@ -24,6 +24,7 @@
           <p class="fechaExpiracion">Fecha de Expiracion</p>
         
           <ion-accordion-group multiple="true" [value]="valorAccordion" class="accordion">
+
             <ion-accordion>
               <ion-item slot="header">
                 <ion-label>{{mesSeleccionado}}</ion-label>
@@ -42,6 +43,7 @@
                 <ion-label *ngFor="let anio of anios" (click)="seleccionarAnio(anio)">{{anio}}</ion-label>
               </ion-list>
             </ion-accordion>
+            
           </ion-accordion-group>
         </ion-item>
         

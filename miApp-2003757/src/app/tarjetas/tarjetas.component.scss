@@ -2,6 +2,9 @@ ion-grid{
     background-color: #84abaa;
 }
 
+ion-item::part(native) {
+    background-color: transparent;
+  }
 
 .titulo{
     font-size: x-large;
@@ -54,9 +57,16 @@ ion-accordion-group{
     background-color: transparent !important;
 }
 
+ion-accordion{
+    margin-right: 1vw;
+    background-color: transparent !important;
+    color: #231b42;
+}
+
 ion-input{
     margin-top: 4%;
     background-color: transparent !important;
+    color: #231b42;
 }
 
 p{
@@ -66,6 +76,7 @@ p{
     margin-bottom: 2%;
     font-style: italic;
     background-color: transparent;
+    color: #231b42;
   }
 
 @media (max-width: 370px) {

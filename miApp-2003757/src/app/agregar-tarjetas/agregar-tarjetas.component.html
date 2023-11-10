@@ -1,5 +1,6 @@
 <ion-app>
-  <ion-grid>
+  <ion-content style=" --background: transparent">
+    <ion-grid>
       <h6 *ngFor="let usuarios of usuario; index as i">Bienvenido {{usuarios.username}}</h6>
       <ion-title>Mi cartera digital</ion-title>
       <ion-card *ngFor="let tarjeta of tarjetas">
@@ -27,5 +28,6 @@
     <ion-icon name="add-outline"></ion-icon>
     </ion-fab-button>
   </ion-fab>
+  </ion-content>
 </ion-app>
 
